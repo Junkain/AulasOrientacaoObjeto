@@ -46,7 +46,7 @@ namespace OiMundo
             int a = 1, b = -2, c = 1;
 
             delta = b * b - 4 * a * c;
-            if (delta<0)
+            if (delta < 0)
             {
                 MessageBox.Show("Delta não pode ser menor que 0");
             }
@@ -62,7 +62,7 @@ namespace OiMundo
 
         private void button5_Click(object sender, EventArgs e)
         {
-            double saldo = 100;
+            double saldo = 5;
             double valorSaque = 10;
             if (saldo >= valorSaque)
             {
@@ -71,10 +71,93 @@ namespace OiMundo
             }
             else
             {
-                MessageBox.Show("Saldo Insuficiente");
+                MessageBox.Show("Saldo Insuficiente " + saldo);
             }
 
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            double saldo = 100;
+            double taxa;
+            if (saldo < 1000)
+            {
+                taxa = 0.01;
+            }
+            else if (saldo <= 5000)
+            {
+                taxa = 0.05;
+            }
+            else
+            {
+                taxa = 0.1;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            double saldo = 1000;
+            if (saldo < 0.0)
+            {
+                MessageBox.Show("Está negativado");
+            }
+            else if (saldo < 1000000)
+            {
+                MessageBox.Show("Você é um bom cliente");
+            }
+            else
+            {
+                MessageBox.Show("Você é um milionário");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            bool brasileira = true;
+            int idade = 17;
+
+            if (idade < 18)
+            {
+                MessageBox.Show("Não pode votar ");
+            }
+            else if (!brasileira)
+            {
+                MessageBox.Show("Não pode votar");
+            }
+            else
+            {
+                MessageBox.Show("Pode votar");
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            double valorNotaFiscal = 3000;
+            if (valorNotaFiscal > 7000)
+            {
+                MessageBox.Show("Imposto 3%");
+            }
+            else if (valorNotaFiscal > 2999)
+            {
+                MessageBox.Show("Imposto 2.8%");
+            }
+            else if (valorNotaFiscal > 999)
+            {
+                MessageBox.Show("Imposto 2.5%");
+            }
+            else
+            {
+                MessageBox.Show("Imposto 2%");
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            int valor = 15;
+            string mensagem = "";
+            mensagem = valor > 10 ? "Valor maior que 10" : "Valor menos que 10";
+            MessageBox.Show(mensagem);
         }
     }
 }
