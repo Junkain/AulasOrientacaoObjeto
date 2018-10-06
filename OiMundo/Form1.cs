@@ -130,7 +130,7 @@ namespace OiMundo
                 MessageBox.Show("Pode votar");
             }
         }
-
+            
         private void button9_Click(object sender, EventArgs e)
         {
             double valorNotaFiscal = 3000;
@@ -158,6 +158,88 @@ namespace OiMundo
             string mensagem = "";
             mensagem = valor > 10 ? "Valor maior que 10" : "Valor menos que 10";
             MessageBox.Show(mensagem);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            int total = 2;
+            for (int i = 0; i < 5; i++)
+            {
+                total *= 2;
+            }
+            MessageBox.Show("Total no final: " + total);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                MessageBox.Show("Linha: " + (i+1));
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 30; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    MessageBox.Show("Número: "+i);
+                }
+                else
+                {
+                    MessageBox.Show("Não é divisivel" + i);
+                }
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            int total = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                if (!(i % 3 ==0))
+                {
+                    total += i;
+                }
+            }
+            MessageBox.Show("Total: " + total);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            int total = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                if (!(i%3==0 || i%4==0))
+                {
+                    total += i;
+                }
+                
+            }
+            MessageBox.Show("Total: " + total);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            for (int n = 0; n <= 5; n++)
+            {
+                int fatorial = 1;
+                for (int i = 1; i <= n; i++)
+                {
+                    fatorial *= i;
+                }
+                MessageBox.Show("Fatorial de: " + n + " é: " + fatorial);
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            int num = 0;
+            for (int i = 0; i < 21; i++)
+            {
+
+            }
         }
     }
 }
