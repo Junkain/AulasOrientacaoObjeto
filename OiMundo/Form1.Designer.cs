@@ -214,7 +214,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 28);
             this.button17.TabIndex = 16;
-            this.button17.Text = "button17";
+            this.button17.Text = "Fibonnaci";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
