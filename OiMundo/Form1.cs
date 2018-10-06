@@ -54,8 +54,26 @@ namespace OiMundo
             {
                 a1 = (-b + Math.Sqrt(delta) / (2 * a));
                 a2 = (-b - Math.Sqrt(delta) / (2 * a));
-                MessageBox.Show("A1: " + a1 + " - A2: " + a2 + "Hehe" + "Haha");
+                MessageBox.Show("A1: " + a1 + " - A2: " + a2);
             }
+
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            double saldo = 100;
+            double valorSaque = 10;
+            if (saldo >= valorSaque)
+            {
+                saldo -= valorSaque;
+                MessageBox.Show("Saldo atual: " + saldo);
+            }
+            else
+            {
+                MessageBox.Show("Saldo Insuficiente");
+            }
+
 
         }
     }
