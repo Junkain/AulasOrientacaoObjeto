@@ -240,7 +240,74 @@ namespace OiMundo
             for (int i = 0; i < 21; i++)
             {
                 num = temp + i;
+
             }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            Conta continha = new Conta();
+            continha.titular = "Ellem";
+            continha.saldo = 2000;
+            continha.numero = 1234;
+
+            MessageBox.Show(continha.titular + " Dono da conta");
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Conta c = new Conta();
+            c.titular = "Ellem";
+            c.saldo = 1000;
+            c.idade = 16;
+
+            MessageBox.Show("Valor atual: " + c.saldo);
+            c.Deposita(100);
+            MessageBox.Show("Valor atual: " + c.saldo);
+            if (c.Saca(200))
+            {
+                MessageBox.Show("Sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Insuficiente");
+            }
+            MessageBox.Show("Valor atual: " + c.saldo);
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Conta c1 = new Conta();
+            Conta c2 = new Conta();
+
+            c1.numero = 1;
+            c1.saldo = 10;
+            c1.titular = "haha";
+
+            c2.numero = 1;
+            c2.saldo = 10;
+            c2.titular = "haha";
+
+            if (c1 == c2)
+            {
+                MessageBox.Show("São iguais");
+            }
+            else
+            {
+                MessageBox.Show("Não são tão");
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Conta c = new Conta();
+            c.saldo = 1000;
+            Conta c2 = new Conta();
+            c2.saldo = 1000;
+
+            c.Transfere(c2, 200);
+            MessageBox.Show("Conta 1: " + c.saldo + " Conta 2: "+ c2.saldo);
         }
     }
 }

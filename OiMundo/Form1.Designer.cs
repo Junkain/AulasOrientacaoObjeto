@@ -45,6 +45,10 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -218,11 +222,55 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(112, 89);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 29);
+            this.button18.TabIndex = 17;
+            this.button18.Text = "Conta";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(206, 89);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 28);
+            this.button19.TabIndex = 18;
+            this.button19.Text = "1";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(290, 89);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 27);
+            this.button20.TabIndex = 19;
+            this.button20.Text = "2";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(371, 89);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 24);
+            this.button21.TabIndex = 20;
+            this.button21.Text = "3";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button20);
+            this.Controls.Add(this.button19);
+            this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
@@ -265,6 +313,10 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
     }
 }
 
